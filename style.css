@@ -1,0 +1,127 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body{
+    font-family: 'Poppins' sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #ff00cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-cart {
+    width: 300px;
+    background: rgba(255,255,255,.5);
+    padding:4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-cart::before{
+    content:'';
+    position: absolute;
+    background: rgba(255,255,255,.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1; 
+}
+
+.logo-cart img{
+    width: 300px;
+    height: 100;
+    margin-left: -48px;
+}
+
+.logo-cart,
+.logo-cart-header,
+.login-cart-footer {
+ text-align: center;
+}
+
+.login-cart a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-cart a:hover{
+    text-decoration: underline;
+}
+
+.logo-cart-header{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.logo-cart-header h1{
+    font-size: 10x;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.logo-cart-header h1 + div{
+    font-size: calc(1rem *.8);
+    opacity: .8;
+}
+
+.login-cart-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    grid-gap: 1rem;
+}
+
+.login-cart-form .form-item{
+    position: relative;
+}
+
+.login-cart-form .form-item .form-item-icon{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4rem;
+}
+
+.login-cart-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-cart-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem*.8);
+    margin-bottom: .5rem;
+}
+
+.login-cart-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem*.8);
+}
+
+.login-cart input[type="text"],
+.login-cart input[type="password"],
+.login-cart input[type="email"] {
+    border:none;
+    outline:none;
+    background: rgba(255,255,255,.5);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem*2.5);
+    border-radius: 100px;
+    width:100%;
+    transition: background.5s;
+}
+
+@media (max-width: 768px){
+    body {
+        paddling: 2rem 0;
+    }
+    .login-cart {
+        width: 300px;
+        padding: 2rem;
+    }
+}
